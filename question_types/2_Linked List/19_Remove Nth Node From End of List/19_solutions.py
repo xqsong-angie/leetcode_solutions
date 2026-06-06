@@ -33,4 +33,46 @@ class Solution:
                 temp.next=None
             return dummy.next
             
+#20260605
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+        if n==1:
+            cur=head
+            if not head.next:
+                return None
+            while cur.next.next:
+                cur=cur.next
+            cur.next=None
         
+        else:
+            #get list length
+            cur=head
+            count=0
+            while cur:
+                count+=1
+                cur=cur.next
+            diff=count-n
+            if diff==0:
+                return head.next
+            else:
+                #initialize pointers
+                dummy=ListNode(val=-1)
+                dummy.next=head
+                prev=dummy
+                cur=prev.next
+                next=cur.next
+
+                #move pointers
+                for _ in range(diff):
+                    prev=prev.next
+                    cur=prev.next
+                    next=cur.next
+                prev.next=next
+                cur.next=None
+
+        return head
