@@ -19,5 +19,34 @@ class Solution:
             return True
         else:
             return False
-                    
+
+#20260606
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack=[]
+
+        for c in s:
+            if c in ["(","[","{"]:
+                stack.append(c)
+            else:
+                if not stack:
+                    return False
+                else:
+                    if c==")":
+                        if stack[-1]=="(":
+                            stack.pop()
+                        else:
+                            return False
+                    elif c=="]":
+                        if stack[-1]=="[":
+                            stack.pop()
+                        else:
+                            return False
+                    else:
+                        if stack[-1]=="{":
+                            stack.pop()
+                        else:
+                            return False
+
+        return False if stack else True
         

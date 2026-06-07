@@ -1,3 +1,4 @@
+#20250921
 class Solution:
     def repeatedSubstringPattern(self, s: str) -> bool:
         n=len(s)
@@ -15,3 +16,9 @@ class Solution:
             return False
         else:
             return True
+        
+#20260606
+class Solution:
+    #https://algo.monster/liteproblems/459
+    def repeatedSubstringPattern(self, s: str) -> bool:
+        return (s + s).index(s, 1) < len(s)
