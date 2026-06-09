@@ -20,3 +20,19 @@ class Solution:
             self.invertTree(cur.left)
             self.invertTree(cur.right)
             return root
+        
+#20260608
+class Solution:
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None
+        
+        # 1. 先把左子树和右子树各自翻转好（递归）
+        left_side = self.invertTree(root.left)
+        right_side = self.invertTree(root.right)
+        
+        # 2. 根节点最后把它们交换（后序：左右根）
+        root.left = right_side
+        root.right = left_side
+        
+        return root
