@@ -119,3 +119,25 @@ class Solution:
             res+=left[i:] #注意别忘了补齐
             res+=right[j:]
             return res
+
+#20260615
+#quick sort
+import random
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        if len(nums) <= 1:
+            return nums
+        
+        # 1. 随机选取 Pivot
+        pivot = random.choice(nums)
+        
+        # 2. 将数组分为三部分：小于、等于、大于
+        # 这样处理可以完美避开“pivot 交换”时产生的逻辑死锁
+        left = [x for x in nums if x < pivot]
+        mid = [x for x in nums if x == pivot]
+        right = [x for x in nums if x > pivot]
+        
+        # 3. 递归排序并拼接
+        return self.sortArray(left) + mid + self.sortArray(right)
+
+#bucket sort
