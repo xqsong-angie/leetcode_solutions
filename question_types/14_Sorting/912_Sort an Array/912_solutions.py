@@ -139,5 +139,32 @@ class Solution:
         
         # 3. 递归排序并拼接
         return self.sortArray(left) + mid + self.sortArray(right)
+#需要补充原地交换的写法
 
 #bucket sort
+#错：
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        #bucket
+        count=[0]*10**5 #index out of range,少算了一个坑位
+        n=len(nums)
+        for i in range(n):
+            count[nums[i]+5*10**4]+=1
+        #sort
+        res=[]
+        for i in range(10**5):#10**5+1
+            res+=[i-5*10**4]*count[i]
+        return res
+#对：
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        #bucket
+        count = [0] * (10**5 + 1)
+        n=len(nums)
+        for i in range(n):
+            count[nums[i]+5*10**4]+=1
+        #sort
+        res=[]
+        for i in range(10**5+1):
+            res.extend([i-5*10**4]*count[i])
+        return res
