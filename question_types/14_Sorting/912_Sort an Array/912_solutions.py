@@ -168,3 +168,40 @@ class Solution:
         for i in range(10**5+1):
             res.extend([i-5*10**4]*count[i])
         return res
+
+#20260618   
+#heap sort
+#https://www.geeksforgeeks.org/dsa/heap-sort/
+class Solution:
+    # To heapify a subtree rooted with node i
+    def heapify(self,arr, n, i):
+        # Initialize largest as root 三个指针把数组变树
+        largest = i
+        # left index = 2*i + 1
+        l = 2 * i + 1
+        # right index = 2*i + 2
+        r = 2 * i + 2
+        # If left child is larger than root
+        if l < n and arr[l] > arr[largest]:
+            largest = l
+        # If right child is larger than largest so far
+        if r < n and arr[r] > arr[largest]:
+            largest = r
+        # If largest is not root
+        if largest != i:
+            arr[i], arr[largest] = arr[largest], arr[i] #python遵循先求值再赋值原则，可以这么写，其他语言要用swap
+            # Recursively heapify the affected sub-tree
+            self.heapify(arr, n, largest)
+
+    def sortArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        # Build heap (rearrange vector)
+        for i in range(n // 2 - 1, -1, -1): #从最右下的那个根节点开始调
+            self.heapify(nums, n, i)
+        # One by one extract an element from heap
+        for i in range(n - 1, 0, -1):
+            # Move current root to end
+            nums[0], nums[i] = nums[i], nums[0]
+            # Call max heapify on the reduced heap
+            self.heapify(nums, i, 0)
+        return nums
