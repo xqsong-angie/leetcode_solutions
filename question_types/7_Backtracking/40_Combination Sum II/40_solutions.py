@@ -19,4 +19,46 @@ class Solution:
                 return       
         backtracking(target-self.sum,0)
         return self.res
+
+#20260628
+#错：
+def  subsetSums(nums, target):
+    nums.sort()
+    res=[]
+    path=[]
+    n=len(nums)
+    if sum(nums)<target:
+        return []
+    def backtracking(pt, nums, target,path):
+        if pt<n:
+            for i in range(pt,n):
+                if sum(path)<target:
+                    path.append(nums[i])
+                    backtracking(pt+1,nums,target,path) #i+1
+                    path.pop()
+                elif sum(path)==target:
+                    res.append(list(path))
+    backtracking(0,nums,target,path)
+    return res
+
+#对：
+def  subsetSums(nums, target):
+    nums.sort()
+    res=[]
+    path=[]
+    n=len(nums)
+    if sum(nums)<target:
+        return []
+    def backtracking(pt, cur_sum):
+        if cur_sum==target:
+            res.append(list(path))
+        if cur_sum>target:
+            return
+        for i in range(pt,n):
+            path.append(nums[i])
+            backtracking(i+1,cur_sum+nums[i])
+            path.pop()
+
+    backtracking(0,0)
+    return res
             
