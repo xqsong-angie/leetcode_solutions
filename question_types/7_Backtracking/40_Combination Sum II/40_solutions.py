@@ -20,7 +20,11 @@ class Solution:
         backtracking(target-self.sum,0)
         return self.res
 
-#20260628
+#20260628 
+"""
+这道是变体，比原题简单在distinct
+Find subset of elements that are selected from a given set of positive integers whose sum adds up to a given number K.
+"""
 #错：
 def  subsetSums(nums, target):
     nums.sort()
@@ -61,4 +65,3 @@ def  subsetSums(nums, target):
 
     backtracking(0,0)
     return res
-            
