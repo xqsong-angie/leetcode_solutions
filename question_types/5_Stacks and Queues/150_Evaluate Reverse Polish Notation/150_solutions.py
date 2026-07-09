@@ -50,3 +50,34 @@ class Solution:
             else:
                 stack.append(tokens[i])
         return int(stack[-1])
+    
+#20260707
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack=[]
+        n=len(tokens)
+        #https://www.geeksforgeeks.org/python/floor-ceil-function-python/
+        for i in range(n):
+            if tokens[i]=="+":
+                num1=stack.pop()
+                num2=stack.pop()
+                stack.append(num1+num2)
+            elif tokens[i]=="-":
+                num2=stack.pop()
+                num1=stack.pop()
+                stack.append(num1-num2)
+            elif tokens[i]=="*":
+                num1=stack.pop()
+                num2=stack.pop()
+                stack.append(num1*num2)
+            elif tokens[i]=="/":
+                num2=stack.pop()
+                num1=stack.pop()
+                s=num1/num2
+                if s<0:
+                    stack.append(ceil(s))
+                else:
+                    stack.append(floor(s))
+            else:
+                stack.append(int(tokens[i]))
+        return stack[-1]     

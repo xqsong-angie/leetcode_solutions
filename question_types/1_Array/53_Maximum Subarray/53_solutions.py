@@ -35,9 +35,23 @@ class Solution:
             if window_sum > max_sum:
                 max_sum = window_sum
                 
-            # 3. 核心：当窗口和跌破 0 时，说明这个窗口废了，左指针直接“瞬移”
+            # 3. 核心：当窗口和跌破 0 时，说明这个窗口废了，左指针直接“瞬移”（把整个窗口想象成一个负数）
             if window_sum < 0:
                 window_sum = 0   # 清空当前窗口和
                 left = right + 1 # 左指针直接跳到下一个位置，准备开启新窗口
+                
+        return max_sum
+    
+#20260705(超时)
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        max_sum=max(nums)
+        n=len(nums)
+        for i in range(n):
+            cur_sum=0
+            if nums[i]>=0:
+                for j in range(i,n):
+                    cur_sum+=nums[j]
+                    max_sum=max(max_sum,cur_sum)
                 
         return max_sum

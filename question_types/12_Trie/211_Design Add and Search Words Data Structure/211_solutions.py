@@ -34,3 +34,5 @@ class WordDictionary:
 # obj = WordDictionary()
 # obj.addWord(word)
 # param_2 = obj.search(word)
+
+#🔥20260707: 不会做，看了一遍solution

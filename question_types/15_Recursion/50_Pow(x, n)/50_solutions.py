@@ -27,3 +27,19 @@ class Solution:
             return half * half       # 偶数次方：(x^(n/2))^2
         else:
             return half * half * x   # 奇数次方：(x^(n/2))^2 * x
+        
+#20260708
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n<0:
+            return self.myPow(1/x,-n)
+        elif n==0:
+            return 1
+        else:
+            if n==1:
+                return x
+            elif n%2==0:
+                return self.myPow(x,n//2)**2
+            else:
+                return self.myPow(x,n//2)**2*x
+            
