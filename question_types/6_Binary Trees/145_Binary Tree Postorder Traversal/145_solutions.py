@@ -7,7 +7,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]: #左右中
         res=[]
         if not root:
             return res
@@ -96,4 +96,5 @@ class Solution:
                 stack.append(cur.right)
                 
         # 此时 res 的顺序是 根->右->左，翻转后变成 左->右->根
-        return res[::-1]
+        return res[::-1]#用前序遍历倒转：https://stackoverflow.com/questions/11165153/why-does-this-1-return-a-reversed-list-in-python
+    #[start:end:step]

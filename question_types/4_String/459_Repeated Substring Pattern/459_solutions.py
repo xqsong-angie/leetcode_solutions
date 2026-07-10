@@ -21,4 +21,4 @@ class Solution:
 class Solution:
     #https://algo.monster/liteproblems/459
     def repeatedSubstringPattern(self, s: str) -> bool:
-        return (s + s).index(s, 1) < len(s)
+        return (s + s).index(s, 1) < len(s)#https://www.w3schools.com/python/ref_string_index.asp string.index(value, start, end)

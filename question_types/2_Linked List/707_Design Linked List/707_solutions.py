@@ -93,61 +93,61 @@ class MyLinkedList:
             return -1
         else:
             cur=self.head
-            for _ in range(index):
-                if cur.next:
+            for _ in range(index):#index有多少就移动几次指针
+                if cur.next:#🔥这里其实是有问题的，如果空链表且index>0, cur==None, cur.next取不出来会直接崩溃，建议补充 if not cur return -1
                     cur=cur.next
-                else:
+                else:#index太大了，后面空了
                     return -1
-            return cur.val if cur!=None else -1
+            return cur.val if cur!=None else -1#空链表且index==0
 
     def addAtHead(self, val: int) -> None:
-        new_head=ListNode(val)
-        new_head.next=self.head
-        self.head=new_head
+        new_head=ListNode(val) #待插入头
+        new_head.next=self.head#连结头
+        self.head=new_head#更新头
 
     def addAtTail(self, val: int) -> None:
-        new_node=ListNode(val)
+        new_node=ListNode(val)#待插入尾
         if not self.head:
-            self.head=new_node
-        else:
+            self.head=new_node #没有头作为新头
+        else:#有头，插入尾部
             cur=self.head
             while cur.next!=None:
-                cur=cur.next
+                cur=cur.next#指针移动到尾部
             cur.next=new_node
 
-    def addAtIndex(self, index: int, val: int) -> None:
+    def addAtIndex(self, index: int, val: int) -> None:#给定index插入节点
         if index==0:
             self.addAtHead(val)
         else:
             cur=self.head
-            new_node=ListNode(val)
-            for _ in range(index-1):
+            new_node=ListNode(val)#要插入到节点
+            for _ in range(index-1):#到index前一个
                 if cur:
                     cur = cur.next
-                else:
+                else:#说明index越界，不能加
                     return
-            if not cur:
+            if not cur:#空头部，以及index在最后越界了：len(list)=4, index=5
                 return
-            temp=cur.next
+            temp=cur.next#有可能是一个节点，也可能为空，以免丢失cur.next先保存为temp
             new_node.next=temp
             cur.next=new_node
 
     def deleteAtIndex(self, index: int) -> None:
         if index==0 and not self.head:
             return
-        elif index==0:
+        elif index==0:#删头节点
             if self.head.next:
                 self.head=self.head.next
             else:
                 self.head=None
-        else:
+        else:#删一般节点
             cur=self.head
-            for _ in range(index-1):
+            for _ in range(index-1):#也还是到前一个位置
                 if cur.next:
                     cur=cur.next
                 else:
                     return
-            if cur.next:
+            if cur.next:#直接越过cur.next
                 cur.next=cur.next.next
 
 # Your MyLinkedList object will be instantiated and called as such:
@@ -157,3 +157,5 @@ class MyLinkedList:
 # obj.addAtTail(val)
 # obj.addAtIndex(index,val)
 # obj.deleteAtIndex(index)
+
+#20260709看了一遍

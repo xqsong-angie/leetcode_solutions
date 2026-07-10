@@ -28,11 +28,13 @@ class Solution:
         # Create a hash map to store the frequency of all possible sums from nums1 and nums2
         # Key: sum of a pair (a, b) where a is from nums1 and b is from nums2
         # Value: frequency of this sum
-        sum_count = Counter(a + b for a in nums1 for b in nums2)
+        sum_count = Counter(a + b for a in nums1 for b in nums2) #O（n^2)
       
         # For each pair (c, d) from nums3 and nums4, check if -(c + d) exists in the hash map
         # If it exists, add its frequency to the result
         # This works because we need a + b + c + d = 0, which means a + b = -(c + d)
-        result = sum(sum_count[-(c + d)] for c in nums3 for d in nums4)
+        result = sum(sum_count[-(c + d)] for c in nums3 for d in nums4)#O（n^2)
       
-        return result
+        return result#只需返回结果的个数，无需返回具体结果
+    
+#20260709看了一遍

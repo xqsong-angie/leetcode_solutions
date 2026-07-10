@@ -22,3 +22,5 @@ class Solution:
                 return [numMap[complement], i]
             numMap[num] = i
         return []
+
+#20260709看了一遍

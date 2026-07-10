@@ -14,3 +14,5 @@ class Solution:
         if node:#没有办法看head，但是可以看node之后的节点
             node.val=node.next.val #把node改成下一个节点值
             node.next=node.next.next #再删掉下一个节点
+
+#20260709看了一遍

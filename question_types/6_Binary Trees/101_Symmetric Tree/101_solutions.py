@@ -44,15 +44,15 @@ class Solution:
                 True if the subtrees are mirrors, False otherwise
             """
             # Both nodes are None - symmetric base case
-            if left_node is None and right_node is None:
+            if left_node is None and right_node is None: #只有根也是对称的
                 return True
           
             # One node is None but not the other - not symmetric
-            if left_node is None or right_node is None:
+            if left_node is None or right_node is None: #只有一边肯定不对称
                 return False
           
             # Values don't match - not symmetric
-            if left_node.val != right_node.val:
+            if left_node.val != right_node.val: #两边都有但数值不一样也是不对称
                 return False
           
             # Recursively check:
@@ -62,7 +62,7 @@ class Solution:
                     is_mirror(left_node.right, right_node.left))
       
         # An empty tree or single node is symmetric
-        if root is None:
+        if root is None: #空树是对称的
             return True
           
         # Check if left and right subtrees are mirrors of each other

@@ -35,4 +35,6 @@ class Solution:
         root.left = right_side
         root.right = left_side
         
-        return root
+        return root #叶子节点情况：因为叶子节点没有左右节点，所以所有上面都执行完，left_side=right_side=None, 来到这一步，函数返回root, 叶子待在原地不动，即invertTree(leaf)==leaf
+    
+#20260709看了一遍

@@ -13,10 +13,11 @@ class Solution:
         else: #at least one child(not leaf node)
             left_depth=self.counter(cur.left)
             right_depth=self.counter(cur.right)
+            #这两个地方加1加的都是自己cur那一个
             if left_depth==0 or right_depth==0:
                 return 1+max(left_depth,right_depth) #one of the tree cannot be zero
             else:
-                return 1+min(left_depth,right_depth)
+                return 1+min(left_depth,right_depth) 
 
 
     def minDepth(self, root: Optional[TreeNode]) -> int:

@@ -7,7 +7,7 @@
 class Solution:
     def findTreePaths(self,cur: Optional[TreeNode],cur_path: List[str], sub_paths: List[str]) -> List[str]:
         if not cur:
-            return []
+            return
         cur_path.append(str(cur.val))
         if not cur.left and not cur.right: #leaf 
             sub_paths.append("->".join(cur_path))
@@ -17,10 +17,12 @@ class Solution:
 
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         all_paths=[]
-        if not root:
+        if not root:#空树
             return all_paths
         else:
             cur_path=[]
             cur=root
-            sub_paths=self.findTreePaths(cur,cur_path,all_paths)
+            self.findTreePaths(cur,cur_path,all_paths)
             return all_paths
+        
+#20260709 看了一遍

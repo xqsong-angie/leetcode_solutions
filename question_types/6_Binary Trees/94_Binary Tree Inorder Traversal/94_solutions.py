@@ -54,7 +54,7 @@ class Solution:
 #         self.left = left
 #         self.right = right
 class Solution:
-    def inorder(self,root,res):
+    def inorder(self,root,res): #左中右
         if root.left:
             res=self.inorder(root.left,res)
         res.append(root.val)
@@ -92,6 +92,5 @@ class Solution:
             res.append(cur.val)  # 此时收集结果（左/根）
             
             # 3. 转向右子树
-            cur = cur.right
-            
+            cur = cur.right #若cur.right没了，说明当前节点处理完毕，处理栈内下一节点
         return res

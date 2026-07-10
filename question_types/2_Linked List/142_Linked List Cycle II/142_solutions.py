@@ -38,19 +38,30 @@ class Solution:
 #         self.val = x
 #         self.next = None
 #https://walkccc.me/LeetCode/problems/142/#__tabbed_1_3
+"""
+数学证明：
+设起始到环入口为a, 环入口到快慢指针第一次相遇为b, 环中剩下部分为c,则
+2(a+b)=a+n(b+c)+b
+左右两侧同时减a+b得：a+b=n(b+c)
+等式右边拆出一个b+c得：a+b=(n-1)(b+c)+b+c
+等式两边同时减去b得：a=(n-1)(b+c)+c
+此时把慢指针放回head, 就会在快指针转整数圈后再走c，与慢指针在环入口相遇
+"""
 class Solution:
   def detectCycle(self, head: ListNode) -> ListNode:
     slow = head
     fast = head
 
     while fast and fast.next:
-      slow = slow.next
-      fast = fast.next.next
-      if slow == fast:
-        slow = head
+      slow = slow.next#x1
+      fast = fast.next.next#x2
+      if slow == fast:#相遇位
+        slow = head#慢指针移回开头
         while slow != fast:
           slow = slow.next
           fast = fast.next
         return slow
 
     return None
+  
+#20260709看了一遍

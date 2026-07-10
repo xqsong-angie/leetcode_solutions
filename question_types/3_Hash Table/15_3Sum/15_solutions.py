@@ -19,24 +19,25 @@ class Solution:
         return list(set(res))
 
 #20260605
-
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
         nums.sort()
         res = []
         
         for i in range(len(nums) - 2):
-            if i > 0 and nums[i] == nums[i-1]:
+            if i > 0 and nums[i] == nums[i-1]:#值去重
                 continue
             
-            seen = set()
+            seen = set() #
             j = i + 1
             while j < len(nums):
                 target = -nums[i] - nums[j]
                 if target in seen:
                     res.append([nums[i], target, nums[j]])
                     while j + 1 < len(nums) and nums[j] == nums[j+1]:
-                        j += 1          # 跳过重复的 j
-                seen.add(nums[j])
+                        j += 1          # 值去重
+                seen.add(nums[j])#nums[j]暂时不能与nums[i]构成solution
                 j += 1
         return res
+
+#20260709看了一遍
