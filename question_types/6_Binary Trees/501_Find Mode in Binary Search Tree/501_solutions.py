@@ -20,13 +20,13 @@ class Solution:
                     self.count=1
                 elif root.val==self.prev.val:
                     self.count+=1
-                else:
-                    if self.maxCnt==self.count:
+                else: #如果最后值不一样才更新，最后一个值如果一样就跳出循环了（但是如果这个数此时变成众数，没有同步到result里面）
+                    if self.maxCnt==self.count:#处理好几个众数的情况
                         self.result.append(self.prev.val)
                     elif self.maxCnt<self.count:
                         self.maxCnt=self.count
-                        self.result=[]
-                        self.result.append(self.prev.val)
+                        self.result=[]#发现更众的数了，之前都清空
+                        self.result.append(self.prev.val)#换上新的
                     self.count=1
                 self.prev=root
                 inorder(root.right)
@@ -41,4 +41,4 @@ class Solution:
 
         return self.result
     
-                
+#20260710 看了一遍，以上代码能跑通，但有点问题

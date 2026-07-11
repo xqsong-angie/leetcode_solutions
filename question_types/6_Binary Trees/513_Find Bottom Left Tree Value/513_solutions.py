@@ -8,11 +8,10 @@ class Solution:
     def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
         myqueue=[]
         res=[]
-        if not root:
+        if not root:#空树没有左下角值
             return 0
         else:
-            cur=root
-            myqueue.append(cur)
+            myqueue.append(root)
             res.append(list(myqueue))
             while len(myqueue)!=0:
                 cur=myqueue.pop(0)
@@ -22,4 +21,6 @@ class Solution:
                     myqueue.append(cur.left)
                 res.append(list(myqueue))
             res.pop()
-        return res[-1][0].val
+        return res[-1][0].val #就是bfs， 然后找到最后一层的元素
+    
+#20260710 看了一遍（但是上面这个解法很诡异，其实完全可以做普通的层序遍历，然后取最后一层的[0]节点）
