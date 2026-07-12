@@ -12,7 +12,7 @@ class Solution:
             else:
                 return True
         
-        def backtracking(s,pt,count):
+        def backtracking(s,pt,count):#consists of exactly four integer, count=0,1,2,3
             if pt<len(s) and count<3:
                 for i in range(pt,len(s)):
                     if isValidInt(s[pt:i+1]):
@@ -30,3 +30,4 @@ class Solution:
         backtracking(s,0,0)
         return self.res
 
+#20260711 看了一遍
