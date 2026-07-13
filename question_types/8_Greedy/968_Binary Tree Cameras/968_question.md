@@ -6,7 +6,7 @@ You are given the root of a binary tree. We install cameras on the tree nodes wh
 
 Return the minimum number of cameras needed to monitor all nodes of the tree.
 
- 
+
 
 Example 1:
 
