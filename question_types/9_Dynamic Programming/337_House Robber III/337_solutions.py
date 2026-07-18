@@ -20,4 +20,6 @@ class Solution:
     def rob(self, root: Optional[TreeNode]) -> int:
         result=self.robTree(root)
         return max(result)
+    
+#20260717 看了一遍
 

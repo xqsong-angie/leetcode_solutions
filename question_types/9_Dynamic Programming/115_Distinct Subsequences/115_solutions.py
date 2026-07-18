@@ -11,5 +11,7 @@ class Solution:
                 if s[i-1]==t[j-1]:
                     dp[i][j]=dp[i-1][j-1]+dp[i-1][j] #用s[i-1]和不用s[i-1]
                 else:
-                    dp[i][j]=dp[i-1][j]
+                    dp[i][j]=dp[i-1][j]#此处要求连续，不匹配就要清零，所以不能用“用[j-1]”的那一半
         return dp[m][n]
+    
+#20260717 看了一遍

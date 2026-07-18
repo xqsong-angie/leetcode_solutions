@@ -33,7 +33,7 @@ class Solution:
         elif n==2:
             return max(nums[0],nums[1])
         elif n>=3:
-            def max_money(mylist):
+            def max_money(mylist):#
                 n=len(mylist)
                 dp=[0]*n
                 dp[0]=mylist[0]
@@ -41,5 +41,8 @@ class Solution:
                 for i in range(2,n):
                     dp[i]=max(dp[i-1],dp[i-2]+mylist[i])
                 return dp[n-1]
-            return max(max_money(nums[1:]),max_money(nums[:-1]))
+            return max(max_money(nums[1:]),max_money(nums[:-1]))#选头不选尾，选尾不选头，如果“头尾都没选”能产生最大值，那么这个结果一定会被 nums[1:] 或 nums[:-1] 的其中之一覆盖到
+        #只要没有同时选取第一个元素和最后一个元素就可以
+        
+#20260717 看了一遍 
         

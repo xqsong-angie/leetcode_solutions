@@ -15,3 +15,5 @@ class Solution:
                 else:
                     dp[i][j]=min(dp[i][j-1],dp[i-1][j])+1
         return dp[m][n]
+    
+#20260717 看了一遍

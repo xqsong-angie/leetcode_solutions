@@ -5,7 +5,7 @@ class Solution:
         if n==1:
             return 0
         else:
-            #dp[1][0]从来没有任何操作过
+            #dp[1][0]从来没有任何操作过，利润必定为0
             dp[1][1]=-prices[0] #第一次买入
             dp[1][2]=0 #第一次卖出
             dp[1][3]=-prices[0] #第二次买入
@@ -17,3 +17,5 @@ class Solution:
                 dp[i][4]=max(dp[i][3]+prices[i-1],dp[i-1][4]) #第二次不持有，不知道哪天卖出去的
 
             return dp[n][4]
+        
+#20260717 看了一遍

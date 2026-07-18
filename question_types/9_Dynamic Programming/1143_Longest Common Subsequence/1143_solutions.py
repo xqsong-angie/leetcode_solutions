@@ -9,5 +9,7 @@ class Solution:
                 if text1[i-1]==text2[j-1]:
                     dp[i][j]=dp[i-1][j-1]+1
                 else:
-                    dp[i][j]=max(dp[i-1][j], dp[i][j-1])
+                    dp[i][j]=max(dp[i-1][j], dp[i][j-1])#与maximum length of repeated subarray不同，此处不需要连续，所以长度无需重置
         return dp[m][n]
+    
+#20260717 看了一遍

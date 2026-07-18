@@ -7,9 +7,11 @@ class Solution:
         dp=[[0 for _ in range(n)]for _ in range(m)]
         for i in range(m):
             for j in range(n):
-                if nums1[i] == nums2[j]:
+                if nums1[i] == nums2[j]:#公共
                     if i > 0 and j > 0:
-                        dp[i][j] = dp[i-1][j-1] + 1
+                        dp[i][j] = dp[i-1][j-1] + 1#是从左上的位置来的，i和j同时+1
                     else:
                         dp[i][j] = 1
         return max(max(x) for x in dp)
+    
+#20260717 看了一遍
