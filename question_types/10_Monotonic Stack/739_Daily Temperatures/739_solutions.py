@@ -6,7 +6,7 @@ class Solution:
         
         for i in range(n):
             if not m_stack:
-                m_stack.append(i)
+                m_stack.append(i)#放索引，不放值
             else:
                 if temperatures[i]<=temperatures[m_stack[-1]] or not m_stack:
                     m_stack.append(i)
@@ -19,5 +19,7 @@ class Solution:
                     m_stack.append(i)
 
         return result
+    
+#20260718 看了一遍
 
         
