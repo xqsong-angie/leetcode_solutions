@@ -4,7 +4,7 @@ class Solution:
         self.father=[]
 
     def init(self,n):
-        self.father=[i for i in range (n+1)]
+        self.father=[i for i in range (n+1)]#还是是没有连接的，每个连通分量只有自己
         #初始化，一个节点占一个集合
 
     def find(self, u):#用来找u的根节点
@@ -17,14 +17,15 @@ class Solution:
     def isSame(self,u,v): # if u, v are in the same set（如何判断两者是否属于一个集合？即是否有共同根节点）
         u=self.find(u)
         v=self.find(v)
-        if u==v:
+        if u==v:#最后我们发现他们有共同根了
             return True
         else:
             return False
+        
     def join(self, u, v):
         u=self.find(u) #看看u的根
         v=self.find(v)#看看v的根
-        if u==v:#如果u与v在同一集合，无需join
+        if u==v:#如果u与v在同一集合，无需join（🔥有环情况，不更改）
             return 
         else:#如果不在，要把两者并根
             self.father[v]=u
@@ -34,8 +35,9 @@ class Solution:
         self.init(n)
         for s,t in edges:
             if self.isSame(s,t): #如果检测到两个点已经在同一个connected components(set)里面，多出来的这条边就是多的
-                return [s,t]
+                return [s,t]#🔥如何确保multiple answer是列表最后一个：“代码中第一次触发成环的边”，物理意义上正好就是“构成环的所有边中，在原数组里位置最靠后的那条边”！
             else: #否则连接两个点
                 self.join(s,t)
     
 
+#20260723 看了一遍

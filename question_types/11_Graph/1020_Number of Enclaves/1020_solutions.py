@@ -14,11 +14,13 @@ class Solution:
         for i in range(m):
             for j in range(n):
                 if grid[i][j]==1:
-                    if i==0 or i==m-1 or j==0 or j==n-1:
+                    if i==0 or i==m-1 or j==0 or j==n-1:#这个是边上的，要把所有跟边上有连接到抹掉
                         grid[i][j]=0 #erase all islands that are not enclaves
                         dfs(grid,i,j)
         for i in range(m):
             for j in range(n):
-                if grid[i][j]==1:
+                if grid[i][j]==1:#其他的统计一下
                     res+=1
         return res
+    
+#20260723 看了一遍

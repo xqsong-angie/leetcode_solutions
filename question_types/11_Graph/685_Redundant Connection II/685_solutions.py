@@ -29,8 +29,9 @@ class Solution:
         else:
             self.father[u]=v
 
-    def findRedundantDirectedConnection(self, edges: List[List[int]]) -> List[int]:
-        #1.找到入度为2的点（有向树的定义，每个节点最多有一个父亲）
+    #🔥“原本是一棵合法的 N 个节点、N-1 条边的有向树，后来有人多加了一条边，变成了 N 条边。”
+    def findRedundantDirectedConnection(self, edges: List[List[int]]) -> List[int]:#比684难在有向图
+        #1.找到入度为2的点（🔥有向树的定义，每个节点最多有一个父亲，即入度最多一条，有向树指父亲指向孩子）
         n=len(edges)
         self.init(n)
         indegree=defaultdict(lambda: 0)
@@ -38,7 +39,7 @@ class Solution:
             #判断入度为2
             indegree[t]+=1
 
-        #2.记录入度为2对应的那两条候选边
+        #2.记录入度为2对应的那两条候选边，决定删哪一条
         cand1=cand2=None
         for s,t in edges:
             if indegree[t]==2:
@@ -48,7 +49,7 @@ class Solution:
                     cand2=[s,t] #记录后出现的那一条
         #3.1 有入度为2的点
         if cand2:
-            #跳过cand2(其实也可以跳过cand1,逻辑等价)，建并查集（假设删掉的是这条边，看剩下的合不合法），看是否有环
+            #优先选择跳过cand2，建并查集（假设删掉的是这条边，看剩下的合不合法），看是否有环
             self.init(n)
             for s,t in edges:
                 if[s,t]==cand2:#跳过cand2
@@ -67,4 +68,4 @@ class Solution:
                     self.join(s,t)
             
 
-        
+#20260723 看了一遍

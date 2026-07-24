@@ -8,13 +8,13 @@ class Solution:
         else:
             pacific=[ [False for _ in range(n)] for _ in range(m)]
             atlantic=[ [False for _ in range(n)] for _ in range(m)]
-            def dfs(heights,visited,x,y):
+            def dfs(heights,visited,x,y):#之前看过的dfs多一个height比较
                 if not visited[x][y]:
                     return
                 direction=[[0,-1],[1,0],[0,1],[-1,0]]
                 for i in range(4):
                     if x+direction[i][1]>=0 and x+direction[i][1]<=m-1 and y+direction[i][0]>=0 and y+direction[i][0]<=n-1:
-                        if not visited[x+direction[i][1]][y+direction[i][0]] and heights[x+direction[i][1]][y+direction[i][0]]>=heights[x][y]:
+                        if not visited[x+direction[i][1]][y+direction[i][0]] and heights[x+direction[i][1]][y+direction[i][0]]>=heights[x][y]:#新的比旧的高，就可以通过旧的流过去
                             visited[x+direction[i][1]][y+direction[i][0]]=True
                             dfs(heights,visited,x+direction[i][1],y+direction[i][0])
 
@@ -32,7 +32,9 @@ class Solution:
         
         for i in range(m):
             for j in range(n):
-                if pacific[i][j]==True and atlantic[i][j]==True:
+                if pacific[i][j]==True and atlantic[i][j]==True:#两边都可以流到
                     result.append([i,j])
 
         return result
+    
+#20260723 看了一遍

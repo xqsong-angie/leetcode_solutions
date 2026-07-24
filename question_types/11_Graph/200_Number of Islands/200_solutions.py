@@ -5,7 +5,7 @@ class Solution:
         def dfs(grid, visited, x,y,m,n):
             direction=[[0,1],[1,0],[-1,0],[0,-1]]
             if x>=0 and x<=m-1 and y>=0 and y<=n-1:
-                if grid[x][y]=="1" and visited[x][y]==False:
+                if grid[x][y]=="1" and visited[x][y]==False:#到边上会自动退出
                     visited[x][y]=True
                     for i in range(4):          
                         dfs(grid,visited,x+direction[i][0],y+direction[i][1],m,n)
@@ -17,8 +17,8 @@ class Solution:
         visited=[[False for _ in range(n)] for _ in range(m)]
         for i in range(m):
             for j in range(n):
-                if grid[i][j]=="1" and visited[i][j]==False:
-                    dfs(grid,visited,i,j,m,n)
+                if grid[i][j]=="1" and visited[i][j]==False:#从看到一个island开始算
+                    dfs(grid,visited,i,j,m,n)#直到把整个island遍历结束
                     res+=1
         return res
     
@@ -34,7 +34,7 @@ class Solution:
             for i in range(4):
                 if x+direction[i][1]>=0 and x+direction[i][1]<=m-1 and y+direction[i][0]>=0 and y+direction[i][0]<=n-1:
                     if grid[x+direction[i][1]][y+direction[i][0]]=="1" and visited[x+direction[i][1]][y+direction[i][0]]==False:
-                        queue.append((x+direction[i][1],y+direction[i][0]))
+                        queue.append((x+direction[i][1],y+direction[i][0]))#周围一圈入队
                         visited[x+direction[i][1]][y+direction[i][0]]=True
 
         res=0
@@ -50,3 +50,5 @@ class Solution:
                         bfs(grid,visited,queue,cur_pos[0],cur_pos[1])
                     res+=1
         return res
+    
+#20260723 看了一遍

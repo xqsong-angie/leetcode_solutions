@@ -85,3 +85,5 @@ class Solution:
                     heapq.heappush(heap, (nf, ng, nr, nc))
         
         return -1
+    
+#20260723 看了一遍

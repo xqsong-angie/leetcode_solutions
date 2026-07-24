@@ -22,3 +22,5 @@ class Solution:
                     queue.append(nei)
         
         return False
+    
+#20260723 看了一遍
