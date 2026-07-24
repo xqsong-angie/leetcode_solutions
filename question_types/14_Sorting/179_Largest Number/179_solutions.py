@@ -43,7 +43,7 @@ class Solution:
     
 #对：
 class Solution:
-    def larger(self,a,b):
+    def larger(self,a,b):#自定义比较器
         return a if int(str(a) + str(b)) > int(str(b) + str(a)) else b
 
 
@@ -58,7 +58,7 @@ class Solution:
             i=j=0
             res=[]
             while i<len(left) and j<len(right):
-                if self.larger(left[i],right[j])==left[i]:
+                if self.larger(left[i],right[j])==left[i]:#不论什么排序，排序的准则是按字符串衔接大小从大到小排
                     res.append(left[i])
                     i+=1
                 else:
@@ -72,3 +72,5 @@ class Solution:
     def largestNumber(self, nums: List[int]) -> str:#https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
         res="".join(str(s) for s in self.mergeSort(nums)) 
         return "0" if res[0] == "0" else res#修复"00"情况
+
+#20260724 看了一遍

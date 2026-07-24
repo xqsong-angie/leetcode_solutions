@@ -5,3 +5,5 @@ class Solution:
         #https://www.reddit.com/r/PythonLearning/comments/1l3vy2r/how_to_use_sorted_function_with_reversetrue/
         x = [val for _, val in sorted(zip(heights, names),reverse=True)] #列表推导式掌握不熟
         return x
+
+#20260724 看了一遍

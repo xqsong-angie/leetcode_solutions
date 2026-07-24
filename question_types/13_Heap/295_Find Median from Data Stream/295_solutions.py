@@ -8,7 +8,7 @@ class MedianFinder:
 
     def addNum(self, num: int) -> None:
         heappush(self.lo, -num)           # push到最大堆（堆顶为最大）
-        heappush(self.hi, -heappop(self.lo))  # lo最大值给hi(堆顶为最大值里面的最小)
+        heappush(self.hi, -heappop(self.lo))  # lo最大值给hi(堆顶为最大值里面的最小),用hi顶 hi>=lo等价
         if len(self.hi) > len(self.lo):   # 保持lo >= hi
             heappush(self.lo, -heappop(self.hi))
 
@@ -22,3 +22,5 @@ class MedianFinder:
 # obj = MedianFinder()
 # obj.addNum(num)
 # param_2 = obj.findMedian()
+
+#20260724 看了一遍

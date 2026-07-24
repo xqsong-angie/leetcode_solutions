@@ -27,19 +27,18 @@ class Solution:
         return res
     
 #对：
-
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         if not intervals:
             return [newInterval]
             
-        # 1. 按照起点顺序插入
+        # 1. 按照起点顺序插入（按起点排序）
         intervals_sorted = []
         i = 0
         n = len(intervals)
         flag = False
         
-        while i < n:
+        while i < n:#将newInterval插入，先不合并
             if intervals[i][0] <= newInterval[0] or flag == True:
                 intervals_sorted.append(intervals[i])
                 i += 1
@@ -91,3 +90,5 @@ class Solution:
             i += 1
             
         return res
+    
+#20260724 看了一遍

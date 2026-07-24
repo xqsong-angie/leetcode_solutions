@@ -18,14 +18,14 @@ class WordDictionary:
                 return '#' in node
             else:
                 if word[index]==".":
-                    for child in node:
+                    for child in node:#每一条路都没返回True,说明没找到
                         if child != '#':
                             if dfs(index+1,node[child]):
                                 return True
                     return False
 
-                elif word[index] in node:
-                    return dfs(index+1, node[word[index]])
+                elif word[index] in node:#单个的
+                    return dfs(index+1, node[word[index]])#直接再往下就行了
                 else:
                     return False
         return dfs(0, self.root)
@@ -36,3 +36,4 @@ class WordDictionary:
 # param_2 = obj.search(word)
 
 #🔥20260707: 不会做，看了一遍solution
+#20260724 看了一遍

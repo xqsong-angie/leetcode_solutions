@@ -12,7 +12,7 @@
 #                     nums[i+1]=temp
 #         return nums
 class Solution:
-    def sortArray(self, nums: List[int]) -> List[int]:
+    def sortArray(self, nums: List[int]) -> List[int]:#不断两两交换，把小的换到左边
         n = len(nums)
         for i in range(n):
             swapped = False
@@ -46,7 +46,7 @@ class Solution:
             nums[j]=temp
         return nums
     
-#正确：
+#正确：每个元素都和左侧所有的比较，插入到合适位置
 class Solution:
     #insertion sort
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -74,8 +74,8 @@ class Solution:
             nums[i]=min_val
         return nums
 
-#正确：
-class Solution:
+#正确：和堆排一样，每次选最小的拿出来放好，然后次小的
+class Solution: 
     def sortArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
         for i in range(n):
@@ -121,7 +121,7 @@ class Solution:
             return res
 
 #20260615
-#quick sort
+#quick sort 三段法
 import random
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
@@ -174,7 +174,7 @@ class Solution:
 #https://www.geeksforgeeks.org/dsa/heap-sort/
 class Solution:
     # To heapify a subtree rooted with node i
-    def heapify(self,arr, n, i):
+    def heapify(self,arr, n, i):#🔥大根堆
         # Initialize largest as root 三个指针把数组变树
         largest = i
         # left index = 2*i + 1
@@ -187,8 +187,7 @@ class Solution:
         # If right child is larger than largest so far
         if r < n and arr[r] > arr[largest]:
             largest = r
-        # If largest is not root
-        if largest != i:
+        # If largest is not root 
             arr[i], arr[largest] = arr[largest], arr[i] #python遵循先求值再赋值原则，可以这么写，其他语言要用swap
             # Recursively heapify the affected sub-tree
             self.heapify(arr, n, largest)
@@ -196,7 +195,7 @@ class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         n = len(nums)
         # Build heap (rearrange vector)
-        for i in range(n // 2 - 1, -1, -1): #从最右下的那个根节点开始调
+        for i in range(n // 2 - 1, -1, -1): #从最右下的那个根节点开始调 🔥必须自底向上调，保证左右子树都已经是大根堆，左下不方便，因为不能顺序遍历
             self.heapify(nums, n, i)
         # One by one extract an element from heap
         for i in range(n - 1, 0, -1):
@@ -205,3 +204,5 @@ class Solution:
             # Call max heapify on the reduced heap
             self.heapify(nums, i, 0)
         return nums
+
+#20260724 看了一遍

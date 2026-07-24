@@ -26,7 +26,7 @@ class Solution:
 
         return -1 if res==1 else res-1
                     
-#对：bfs不需要递归
+#对：bfs不需要递归（一般这种无权求最短求最近的用bfs)
 from collections import deque
 class Solution:
     def nearestExit(self, maze: List[List[str]], entrance: List[int]) -> int:
@@ -52,3 +52,4 @@ class Solution:
 
         return -1 # 队列都空了还是没找到出口，说明出不去
                     
+#20260724 看了一遍

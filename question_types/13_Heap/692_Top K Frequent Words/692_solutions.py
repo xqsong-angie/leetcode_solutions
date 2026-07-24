@@ -14,3 +14,5 @@ class Solution:
             res.append(word)
 
         return res
+    
+#20260724 看了一遍

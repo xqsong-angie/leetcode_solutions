@@ -13,4 +13,4 @@ class Solution:
                 end=mid#这里用end还是end-1取决于区间定义为左闭右闭还是左闭右开
         return begin
 
-            
+ #20260724 看了一遍

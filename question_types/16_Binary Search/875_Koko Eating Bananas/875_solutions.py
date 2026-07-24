@@ -38,3 +38,4 @@ class Solution:
                 left=mid+1
         return left#最后区间里有多个满足值，指向最小值
 
+#20260724 看了一遍

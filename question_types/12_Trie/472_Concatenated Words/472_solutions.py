@@ -68,7 +68,9 @@ class Solution:
             if can_form_by_concatenation(word):#说明当前trie里存在该长单词的各个部分，不需要再把该长单词放入trie
                 result.append(word)
             else:
-                # If not, add it to trie for future concatenations，但是当前这个单词就不能用来组成了
+                # If not, add it to trie for future concatenations，但是当前这个单词就不能用来组成了,这个单词也不能被用作结果
                 trie.insert(word)
       
         return result
+
+#20260724 看了一遍
