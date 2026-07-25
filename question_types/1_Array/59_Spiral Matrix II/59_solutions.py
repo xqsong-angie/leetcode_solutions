@@ -37,3 +37,39 @@ class Solution:
 
         return res
 
+#20260725
+#错：
+class Solution:
+    def generateMatrix(self, n: int) -> List[List[int]]:
+        res=[[0]*n for _ in range(n)]
+        count=1 #要填入格子的数
+        offset=1
+        start_x=0
+        start_y=0
+        while count<=n**2:
+            #填最上面一行
+            for i in range(start_y,n-offset): #🔥range(1, 1)中心是遍历不到的
+                res[start_x][i]=count
+                count+=1
+
+            #填最右侧一列
+            for i in range(start_x,n-offset):
+                res[i][n-start_y-1]=count
+                count+=1
+
+            #填最下方一行
+            for i in range(n-start_y-1,offset-1,-1):
+                res[n-start_x-1][i]=count
+                count+=1
+
+            #填最左侧一列
+            for i in range(n-start_x-1,offset-1,-1):
+                res[i][start_y]=count
+                count+=1
+
+            offset+=1
+            start_x+=1
+            start_y+=1 #🔥后续三个 for 循环也都因为区间为空不执行。count 没有增加，但 offset 和 start 却继续增加。之后循环一直空转，count 永远等于 9，程序陷入死循环。
+
+        return res
+    

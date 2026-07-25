@@ -96,3 +96,31 @@ class Solution:
                 
         # 如果 min_cnt 没被更新过，说明整个数组加起来都没达到 target，返回 0
         return min_cnt if min_cnt != float('inf') else 0
+    
+#20260725
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        if sum(nums)<target:
+            return 0
+        cur_sum=0
+        n=len(nums)
+        min_length=n
+        cur_length=0
+        i=j=0
+        while i<=j:
+            while j<n and cur_sum<target:
+                cur_sum+=nums[j]
+                cur_length+=1
+                j+=1
+            while cur_sum>=target:
+                min_length=min(min_length,cur_length)
+                cur_sum-=nums[i]
+                cur_length-=1
+                i+=1
+            if j==n and cur_sum<target:
+                break
+        return min_length
+            
+                
+            
+                

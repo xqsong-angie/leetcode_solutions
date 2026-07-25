@@ -29,3 +29,23 @@ class Solution:
         for i in range(len(stack)):
             ans+=stack[i][1]-stack[i][0]+1
         return ans
+    
+#20260724
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        i=0
+        n=len(nums)
+        if n==0:
+            return 0
+        else:
+            while i<n and nums[i]!=val:
+                i+=1
+            j=i
+            while j<n:
+                if nums[j]!=val:
+                    nums[i]=nums[j]
+                    i+=1
+                    j+=1
+                else:
+                    j+=1
+            return i

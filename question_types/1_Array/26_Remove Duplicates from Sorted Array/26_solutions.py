@@ -32,3 +32,16 @@ class Solution:
                 if j==k:
                     continue
         return len(nums) #这里把后面重复的也算上了
+
+#20260725
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i=j=1
+        n=len(nums)
+        if n>1:
+            while j<n:
+                if nums[j]!=nums[j-1]:#到了不重复的拐点
+                    nums[i]=nums[j]
+                    i+=1
+                j+=1
+        return i

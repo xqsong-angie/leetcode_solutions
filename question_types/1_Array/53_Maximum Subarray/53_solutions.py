@@ -55,3 +55,25 @@ class Solution:
                     max_sum=max(max_sum,cur_sum)
                 
         return max_sum
+    
+#20260725
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        max_sum=max(nums)
+        cur_sum=0
+        n=len(nums)
+        i=0
+        #找到第一个正数
+        while i<n:
+            if nums[i]<0:
+                i+=1
+            else:
+                break
+
+        while i<n:
+            cur_sum+=nums[i]
+            if cur_sum<0:
+                cur_sum=0
+            max_sum=max(max_sum,cur_sum)
+            i+=1
+        return max_sum
