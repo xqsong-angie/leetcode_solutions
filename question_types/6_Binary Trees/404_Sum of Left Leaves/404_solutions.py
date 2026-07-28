@@ -21,3 +21,24 @@ class Solution:
                     return self.sumOfLeftLeaves(cur.left)+self.sumOfLeftLeaves(cur.right)#那就得分别对左子树右子树递归了
 
 #20260710 看了一遍
+
+#20260726
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
+        self.cur_sum=0
+        def preorder(root):
+            if root.left:
+                if not root.left.left and not root.left.right:#left leaf
+                    self.cur_sum+=root.left.val
+                else:
+                    preorder(root.left)
+            if root.right:
+                preorder(root.right)
+        preorder(root)
+        return self.cur_sum

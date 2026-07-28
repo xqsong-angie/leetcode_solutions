@@ -16,3 +16,12 @@ class Solution:
         return f[n]#这是一个虚构的终点，它在台阶 2 的上面，楼顶是n的位置
     
 #20260712 看了一遍
+
+#20260726
+def  minCostClimbingStair(cost):
+    n=len(cost)
+    dp=[0]*(n+1)
+    if n>2:
+        for i in range(2,n+1):
+            dp[i]=min(dp[i-1]+cost[i-1],dp[i-2]+cost[i-2])
+    return dp[n]
