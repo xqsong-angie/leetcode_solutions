@@ -26,3 +26,35 @@ class Solution:
             return all_paths
         
 #20260709 看了一遍
+
+#20260728
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def findPaths(self, root,path,res):
+        if not root.left and not root.right:
+            path+=(str(root.val))
+            res.append(path)
+        else:
+            if root.left:
+                path+=(str(root.val)+"->")
+                temp=len((str(root.val)+"->"))
+                self.findPaths(root.left,path,res)
+                path=path[:-temp]
+            if root.right:
+                path+=(str(root.val)+"->")
+                temp=len((str(root.val)+"->"))
+                self.findPaths(root.right,path,res)
+                path=path[:-temp]
+
+    def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
+        if not root:
+            return []
+        else:
+            res=[]
+            self.findPaths(root,"",res)
+            return res

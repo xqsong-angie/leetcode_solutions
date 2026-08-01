@@ -65,3 +65,32 @@ class Solution:
     return None
   
 #20260709看了一遍
+
+#20260731 这个过了，但还是上面的逻辑更好
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution:
+    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return None
+        else:
+            slow=head.next
+            fast=head.next.next
+            while slow!=fast:
+                if not slow or not fast or not fast.next:
+                    return None
+                slow=slow.next
+                fast=fast.next.next
+            slow=head
+            while slow!=fast:
+                if not slow or not fast:
+                    return None
+                slow=slow.next
+                fast=fast.next
+            return slow
+
+
