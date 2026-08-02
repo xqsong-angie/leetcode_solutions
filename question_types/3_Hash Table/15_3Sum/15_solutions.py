@@ -41,3 +41,24 @@ class Solution:
         return res
 
 #20260709看了一遍
+
+#20260802
+class Solution:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
+        n=len(nums)
+        res=[]
+        hash_map=defaultdict(list)
+        for i in range(n):
+            for j in range(i+1,n):
+                hash_map[nums[i]+nums[j]].append([i,j])
+        
+        for i in range(n):
+            if -nums[i] in hash_map:
+                for h in hash_map[-nums[i]]:
+                    if i not in h:
+                        path=[nums[i],nums[h[0]],nums[h[1]]]
+                        path.sort()
+                        if path not in res: #🔥这里超时了 O（n^3) 但是list<list>不能转化为set
+                            res.append(path)
+        return res
+        

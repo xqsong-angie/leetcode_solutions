@@ -23,7 +23,7 @@ class Solution:
         return list(set(res))
                     
 
- #20260606               
+ #20260606🔥以该版本为准，这是唯一能跑通的版本               
     class Solution:
         def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
             # https://www.geeksforgeeks.org/dsa/find-four-elements-that-sum-to-a-given-value-set-2/#using-hashing-on3-time-and-on-space
@@ -55,6 +55,7 @@ class Solution:
                         s.add(nums[k])
 
             return [list(t) for t in res_set]
+
         
 #20260707
 #错：res无法收录结果（这个方法就算改了也会超时）
@@ -76,7 +77,7 @@ class Solution:
 
         return res
 
-#改正版
+#改正版（依然是错的）
 from collections import defaultdict
 from typing import List
 
@@ -115,3 +116,24 @@ class Solution:
                 
         # 将 set 里的元组转换回列表返回
         return [list(t) for t in res_set]
+    
+#20260802
+#错：
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        res=set()
+        hash_map=defaultdict(list)
+        for i in range(len(nums)-3):
+            if i>0 and nums[i]==nums[i-1]: #对i位置值去重🔥忘记排序，相同的数字会散落在各处
+                continue
+            for j in range(i+1,len(nums)-2):
+                if nums[j]==nums[j-1] or j==i: #对j位置值去重,对j索引去重
+                    continue
+                if target-(nums[i]+nums[j]) in hash_map:
+                    for h in hash_map[target-(nums[i]+nums[j])]:
+                        path=[nums[i],nums[j],nums[h[0]],nums[h[1]]]
+                        path.sort()
+                        res.add(tuple(path))
+                hash_map[nums[i]+nums[j]].append([i,j])
+        return [list(x) for x in res]
+

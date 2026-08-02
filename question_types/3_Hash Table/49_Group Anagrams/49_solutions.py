@@ -32,3 +32,23 @@ class Solution:
             anagrams[tuple(count)].append(s)
             
         return list(anagrams.values())
+    
+
+#20260802
+#错：
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        groups=defaultdict(list)
+        for i in range(len(strs)):
+            cnt=Counter(strs[i])
+            groups[cnt].append(strs[i])#🔥不能用counter当key
+        res=[]
+        for k in groups.keys():
+            res.append(groups[k])
+        return res
+
+"""
+以下几种类型不可哈希：
+list, dict,set,包含可变元素的tuple
+只有纯不可变的类型才可以哈希
+"""
