@@ -42,3 +42,25 @@ class Solution:
         
         # 最终结果 = 总行数 - 最大缝隙数
         return len(wall) - max_gaps
+    
+#20260803
+class Solution:
+    def leastBricks(self, wall: List[List[int]]) -> int:
+        for i in range(len(wall)):
+            for j in range(1,len(wall[i])):
+                wall[i][j]+=wall[i][j-1]
+            wall[i].pop()
+        cnt=defaultdict(int)#count
+        for i in range(len(wall)):
+            for j in range(len(wall[i])):
+                cnt[wall[i][j]]+=1
+        if not cnt:
+            return len(wall)
+        else:
+            #https://www.geeksforgeeks.org/python/python-get-key-with-maximum-value-in-dictionary/
+            max_val=max(cnt,key=cnt.get)
+            res=0
+            for i in range(len(wall)):
+                if max_val not in wall[i]:
+                    res+=1
+            return res

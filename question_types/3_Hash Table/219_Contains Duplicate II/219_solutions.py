@@ -34,3 +34,14 @@ class Solution:
                     return True
         return False
     
+#20260803
+class Solution:
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        hash_map={}#idx
+        for i in range(len(nums)):
+            if nums[i] in hash_map and i-hash_map[nums[i]]<=k:
+                return True
+            else:
+                hash_map[nums[i]]=i
+        return False
+

@@ -26,3 +26,25 @@ class Solution:
                 
 #20260709 看了一遍
 
+#20260803
+class Solution:
+    def findMaxLength(self, nums: List[int]) -> int:
+        sum=0
+        prefix_sum=[]
+        for i in range(len(nums)):
+            if nums[i]==0:
+                nums[i]=-1
+        for i in range(len(nums)):
+            sum+=nums[i]
+            prefix_sum.append(sum)
+        hash_map=defaultdict(int)
+        max_len=0
+        for i in range(len(prefix_sum)):
+            if prefix_sum[i]==0:
+                max_len=max(max_len,i+1)
+            elif prefix_sum[i] in hash_map:
+                max_len=max(max_len,i-hash_map[prefix_sum[i]])
+            else:
+                hash_map[prefix_sum[i]]=i
+        return max_len
+        

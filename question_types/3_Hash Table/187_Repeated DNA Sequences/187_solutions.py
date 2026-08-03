@@ -12,3 +12,15 @@ class Solution:
         return res
     
 #20260709 看了一遍
+
+#20260803
+class Solution:
+    def findRepeatedDnaSequences(self, s: str) -> List[str]:
+        res=[]
+        seen=defaultdict(int)#count
+        for i in range(len(s)-9):
+            myslice=s[i:i+10]
+            if myslice in seen and seen[myslice]==1:
+                res.append(myslice)
+            seen[myslice]+=1
+        return res
