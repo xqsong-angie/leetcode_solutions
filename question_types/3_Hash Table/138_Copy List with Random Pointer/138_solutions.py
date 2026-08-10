@@ -41,10 +41,10 @@ class Solution:
         # 2. 第一遍遍历：创建所有新节点，建立映射
         cur = head
         while cur:
-            node_map[cur] = Node(cur.val)
+            node_map[cur] = Node(cur.val) #为每一个旧节点建立一个新节点，先不要管random
             cur = cur.next
 
-        # 3. 第二遍遍历：连接 next 和 random 指针
+        # 3. 第二遍遍历：连接 next 和 random 指针🔥这样节点不会建多了
         cur = head
         while cur:
             # node_map[cur] 是当前的新节点

@@ -19,3 +19,17 @@ class Solution:
         return res
     
 #20260723 看了一遍
+
+#20260809
+class Solution:
+    def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        n=len(nums)
+        res=[-1]*n
+        m_stack=[]
+        for i in range(2*n):
+                while m_stack and nums[i%n]>nums[m_stack[-1]]:
+                    top=m_stack.pop()
+                    res[top]=nums[i%n]
+                m_stack.append(i%n)
+            
+        return res
