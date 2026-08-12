@@ -54,3 +54,26 @@ class Solution:
                 res.append(nums[q[0]])
                 
         return res
+
+
+
+#20260811🔥最大值掉出窗口了更新到哪里？单调队列
+class Solution:
+    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        res=[]
+        max_val_idx=0
+        queue=[]
+        for i in range(0,len(nums)-k+1,1):
+            if len(queue)<k:
+                queue.append(i)
+                if nums[i]>=nums[max_val_idx]:
+                    max_val_idx=i
+            else:
+                res.append(nums[max_val_idx])
+                if max_val_idx<=queue.pop(0):
+                    queue.append(i)
+                if nums[i]>=nums[max_val_idx]:
+                    max_val_idx=i
+        return res
+
+
