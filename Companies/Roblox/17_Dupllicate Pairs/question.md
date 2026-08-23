@@ -1,0 +1,3 @@
+You are given an array of integers `numbers` and a positive integer `k`. Your task is to count the number of contiguous subarrays within `numbers` that contains at least `k` pairs of elements with duplicate values.
+
+More formally, count the number of contiguous subarrays `numbers[i..j]` (`i <= j`) for which there are `2 * k` elements (with pairwise distinct indices `i <= i1, j1, i2, j2, ..., ik, jk <= j`) with each pair having the same value - `numbers[i1] = numbers[j1]`, `numbers[i2] = numbers[j2]`, ..., `numbers[ik] = numbers[jk]`.

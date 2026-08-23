@@ -1,0 +1,3 @@
+You are given a two-dimensional square matrix `matrix` and an integer `turns`. Your task is to rotate the given matrix "over diagonals" `turns` times and return the resulting matrix. The process of rotating is described below.
+
+The elements on the two main diagonals stay the same after rotating, but the four segments divided by these diagonals are rotated to change places in a clockwise direction. See the images below.
