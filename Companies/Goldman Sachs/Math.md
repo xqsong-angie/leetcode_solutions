@@ -425,6 +425,8 @@ Pick ONE option ❓不会
 - Aᵀ=A
 - Bᵀ=B and Aᵀ=A
 
+思路：
+
 5. Calculus - Limits
 
 Compute lim(h->0) integral(1,1+h)(root(x5 + 8))dx/h 不会算
