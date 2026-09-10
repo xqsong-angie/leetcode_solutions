@@ -1,0 +1,5 @@
+Mr. Woods, an electrician for Timberland city, has made some faulty connections on eight street lights. The errors cause a street light to go OFF if the street lights adjacent to that light were both ON (represented as 1) or both OFF (represented as 0) on the previous night. Otherwise, the light will go ON as normal. The two street lights at the end of the road have only a single adjacent street light, so the light at the end can be assumed to be always OFF. The state of the lights on a particular day is considered for the following day, not for the same day.
+
+Because of this fault, people are having difficulty driving on the road at night. They have filed a complaint to the Head of the Federal Highway Administration. Based on this complaint the head has ordered a report of the state of street lights after M days.
+
+Write an algorithm to output the state of the street lights after the given M days.
