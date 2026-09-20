@@ -21,7 +21,6 @@ class Solution:
                     pop_pt+=1
                 else:#🔥这道题我在pushed的条件上卡住了，就是pop的下一个，有可能在还没push的那一段，也有可能在已经push的那一段，这两段如何分别写条件，多一个visited吗 
 
-
                     while stack[-1]!=popped[pop_pt]:
                         stack.pop()
                         pop_pt+=1
@@ -36,7 +35,7 @@ class Solution:
         
         for x in pushed:
             stack.append(x)  # 依次将元素压入栈
-            # 只要栈顶元素等于当前需要弹出的元素，就持续弹出，如果不是，就说明
+            # 只要栈顶元素等于当前需要弹出的元素，就持续弹出，如果不是，就说明不符合要return false
             while stack and stack[-1] == popped[pop_pt]:
                 stack.pop()
                 pop_pt += 1
