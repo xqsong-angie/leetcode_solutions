@@ -31,3 +31,5 @@ Each date is represented by three integers: year, month(1-12), day(1-31). The fi
 Example: DaysBetween(2010, 5, 1, 2011, 5, 1) returns 365.
 
 Note on Custom Input: You can test against custom input at the very bottom. Each variable must be on its own line. You will notice this if you download the sample testcases. The example input above would be typed into the custom input box as follows:
+
+Note: This variant does not have date range constraint (1971-2100), can be any date.
