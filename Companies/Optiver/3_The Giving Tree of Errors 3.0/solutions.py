@@ -123,7 +123,7 @@ def solution(input_str: str) -> str:
     # -------------------------------------------------------------
     roots = []
     for node in all_nodes:
-        if len(child_to_parents[node]) == 0:
+        if len(child_to_parents[node]) == 0:#某个child 没有parent 的就是root
             roots.append(node)
 
     # 没有入度为 0 的节点说明全图成环（E5）；有多个根节点说明不是单棵树（E4）
@@ -133,7 +133,7 @@ def solution(input_str: str) -> str:
         return "E5"
 
 
-    root = roots[0]
+    root = roots[0]#随机选一个root开始遍历
 
     # -------------------------------------------------------------
     # 5. 检测 E5 (Cycle) & E4 (孤立节点/森林检测)
@@ -154,7 +154,7 @@ def solution(input_str: str) -> str:
         return "E5"
 
     # 如果根节点遍历完后，还有节点没访问到，说明图不连通（有独立森林/孤立环），报 E4
-    if len(visited) != len(all_nodes):
+    if len(visited) != len(all_nodes):#The Secret Trap: Floating Cycles (孤立环)，可能是有好几个圈圈
         return "E4"
 
     # -------------------------------------------------------------
@@ -162,9 +162,9 @@ def solution(input_str: str) -> str:
     # -------------------------------------------------------------
     def get_s_expr(node):
         # 遍历前先对 child 按字母排序，确保字典序最小
-        children = sorted(parent_to_children[node])
+        children = sorted(parent_to_children[node])#每个parent后面跟着的那个数组分别排序
         
-        res = f"({node}"
+        res = f"({node}"#🔥最开始的 Parent 不需要排序，因为它只有一个，就是整棵树的根节点（root）
         for child in children:
             res += get_s_expr(child)
         res += ")"
