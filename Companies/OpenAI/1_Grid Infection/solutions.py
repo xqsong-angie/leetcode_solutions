@@ -16,6 +16,8 @@ def min_days_to_stabilize_p1(grid: List[List[str]]) -> int:
     Part 1: Calculates days until infection spread reaches equilibrium.
     '.' = Healthy, 'X' = Infected
     """
+    m=len(grid)
+    n=len(grid[0])
     if not grid or not grid[0]:
         return 0
     
@@ -29,6 +31,16 @@ def min_days_to_stabilize_p1(grid: List[List[str]]) -> int:
                 queue.append((r, c))
     
     # TODO: Implement Multi-source BFS logic
+    def bfs(x,y,prev):
+        if prev=="X":
+            grid[x][y]="o"
+        elif prev=="o":
+            grid[x][y]="X"
+        for dr in DIRECTIONS_8:
+            dx=dr[0]
+            dy=dr[1]
+            if 0<=x+dx<m and 0<=y+dy<n:
+                bfs(x+dx,y+dy)
     return 0
 
 
