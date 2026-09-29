@@ -12,6 +12,10 @@
   <img src="https://img.shields.io/badge/Topics-Pattern%20Based-C7CEEA?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
 </a>
 &nbsp;&nbsp;&nbsp;
+<a href="./Companies">
+  <img src="https://img.shields.io/badge/Companies-Interview%20Prep-F8C291?style=for-the-badge" alt="Companies">
+</a>
+&nbsp;&nbsp;&nbsp;
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/License-MIT-70C1B3?style=for-the-badge" alt="License">
 </a>
