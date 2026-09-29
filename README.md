@@ -16,7 +16,7 @@
 
 <br><br>
 
-[📂 Browse Question Types](./question_types) • [🏢 Company Tagged Questions](./Companies) • [📕 Read on Little Red Book](https://xiaohongshu.com)
+[📂 Browse Question Types](./question_types) • [🏢 Company Tagged Questions](./Companies) 
 
 </div>
 
@@ -28,15 +28,15 @@
 
 ---
 
-## 📌 1. Classified by Pattern & Topic
+## 1. Classified by Pattern & Topic
 
-The [`./question_types`](./question_types) directory contains curated problem sets along with my detailed walkthroughs, initial wrong attempts, and optimized solutions. 
+The [`./question_types`](./Questions) directory contains curated problem sets along with my detailed walkthroughs, initial wrong attempts, and optimized solutions. 
 
 > **Note:** I highly encourage you to create your own branch or folder to track your personal progress! Happy coding and discussion!
 
 ---
 
-## 🚀 How to Use This Guide Effectively
+## How to Use This Guide Effectively
 
 Follow this 5-step strategy to transition from *brute-forcing* to *pattern recognition*:
 
@@ -79,16 +79,16 @@ Once Easy to Medium questions start feeling manageable, turn on a **20-minute ti
 
 ---
 
-## 🏢 2. Classified by Company Real Questions
+## 2. Classified by Company Real Questions
 
 When you receive an **Online Assessment (OA)** or interview invitation, switch to company-targeted prep immediately!
 
-* Check out the [🏢 Companies Directory](./Companies) to view curated real interview questions and recent OA patterns gathered from various大厂/tech companies.
+* Check out the [Companies Directory](./Companies) to view curated real interview questions and recent OA patterns gathered from various tech companies.
 
 ---
 
 <div align="center">
 
-**Remember: Consistent pattern recognition > Blind grinding. Let's make "LeetCrying" a thing of the past! 💪**
+**Remember: Consistent pattern recognition >> Blind grinding. Wipe away the LeetCrying—it’s time to take center stage! 💪**
 
 </div>
