@@ -10,8 +10,9 @@
 
 <br>
 
+
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF6B6B&center=true&vCenter=true&width=550&lines=做题没思路？非常正常！;拒绝盲目刷题，注重思维拆解。;从 LeetCrying 到轻松拿 Offer!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?pause=1000&color=B5838D&center=true&vCenter=true&width=550&lines=%E5%81%9A%E9%A2%98%E2%80%8B%E6%B2%A1%E2%80%8B%E6%80%9D%E2%80%8B%E8%B7%AF%EF%BC%9F%E2%80%8B%E9%9D%9E%E2%80%8B%E2%80%8B%E5%B8%B8%E2%80%8B%E6%AD%A3%E2%80%8B%E5%B8%B8%EF%BC%81;%E2%80%8B%E6%8B%92%E2%80%8B%E7%BB%9D%E2%80%8B%E7%9B%B2%E2%80%8B%E7%9B%AE%E2%80%8B%E5%88%B7%E2%80%8B%E9%A2%98%EF%BC%8C%E2%80%8B%E6%B3%A8%E2%80%8B%E9%87%8D%E2%80%8B%E6%80%9D%E2%80%8B%E7%BB%B4%E2%80%8B%E6%8B%86%E2%80%8B%E8%A7%A3%E2%80%8B%E3%80%82;%E2%80%8B%E4%BB%8E%E2%80%8B+LeetCrying+%E2%80%8B%E5%88%B0%E2%80%8B%E8%BD%BB%E2%80%8B%E6%9D%BE%E2%80%8B%E6%8B%BF%E2%80%8B+Offer%EF%BC%81" alt="Typing SVG" />
 </a>
 
 <br><br>
