@@ -1,22 +1,30 @@
 <div align="center">
 
-# 😭 ➡️ 😎 No More Leetcrying
+# No More Leetcrying
 
 ### *A Beginner-Friendly Guide to Mastering LeetCode, Tracking Bugs & Cracking Interviews*
 
-[![Language Switch](https://img.shields.io/badge/Language-简体中文-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white)](README_CN.md)
-[![GitHub Stars](https://img.shields.io/github/stars/sxq2003/no-more-leetcrying?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/sxq2003/no-more-leetcrying/stargazers)
-[![License](https://img.shields.io/github/license/sxq2003/no-more-leetcrying?style=for-the-badge&color=blue)](LICENSE)
+<a href="README_CN.md">
+  <img src="https://img.shields.io/badge/Language-简体中文-FF85A1?style=for-the-badge" alt="Language">
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="./Questions">
+  <img src="https://img.shields.io/badge/Topics-Pattern%20Based-C7CEEA?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-70C1B3?style=for-the-badge" alt="License">
+</a>
 
-<br>
-
-<a href="https://git.io/typing-svg">
+<div style="height: 16px;">
+  <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF6B6B&center=true&vCenter=true&width=550&lines=Stuck+on+a+problem%3F+It's+totally+fine!;Stop+Grinding.+Start+Understanding.;From+Crying+to+Offering!" alt="Typing SVG" />
 </a>
 
-<br><br>
+</div>
 
-[📂 Browse Algorithm Types](./Algorithms) • [🏢 Company Tagged Questions](./Companies) 
+
+[Browse Algorithm Types](./Algorithms) • [Company Tagged Questions](./Companies) 
 
 </div>
 
