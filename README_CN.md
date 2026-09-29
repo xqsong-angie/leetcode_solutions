@@ -17,7 +17,7 @@
 
 <br><br>
 
-[📂 浏览题型分类](./Questions) • [🏢 大厂高频面经](./Companies) • [📕 小红书专栏](https://xiaohongshu.com)
+[📂 浏览题型分类](./Questions) • [🏢 大厂高频面经](./Companies) 
 
 </div>
 
