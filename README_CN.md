@@ -4,12 +4,23 @@
 
 ### *专为小白打造的 LeetCode 算法思维拆解、错题避坑与大厂面经指南*
 
-[![Language Switch](https://img.shields.io/badge/Language-English-blue?style=for-the-badge&logo=github)](README.md)
-[![GitHub Stars](https://img.shields.io/github/stars/sxq2003/no-more-leetcrying?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/sxq2003/no-more-leetcrying/stargazers)
-[![License](https://img.shields.io/github/license/sxq2003/no-more-leetcrying?style=for-the-badge&color=blue)](LICENSE)
+<a href="README.md">
+  <img src="https://img.shields.io/badge/Language-English-FF85A1?style=for-the-badge" alt="Language">
+</a>
+&nbsp;&nbsp;
+<a href="./Algorithms">
+  <img src="https://img.shields.io/badge/分类-按题型总结-C7CEEA?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
+</a>
+&nbsp;&nbsp;
+<a href="./Companies">
+  <img src="https://img.shields.io/badge/面经-大厂高频真题-F8C291?style=for-the-badge" alt="Companies">
+</a>
+&nbsp;&nbsp;
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/License-MIT-70C1B3?style=for-the-badge" alt="License">
+</a>
 
-<br>
-
+<div style="height: 16px;"></div>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?pause=1000&color=B5838D&center=true&vCenter=true&width=550&lines=%E5%81%9A%E9%A2%98%E2%80%8B%E6%B2%A1%E2%80%8B%E6%80%9D%E2%80%8B%E8%B7%AF%EF%BC%9F%E2%80%8B%E9%9D%9E%E2%80%8B%E2%80%8B%E5%B8%B8%E2%80%8B%E6%AD%A3%E2%80%8B%E5%B8%B8%EF%BC%81;%E2%80%8B%E6%8B%92%E2%80%8B%E7%BB%9D%E2%80%8B%E7%9B%B2%E2%80%8B%E7%9B%AE%E2%80%8B%E5%88%B7%E2%80%8B%E9%A2%98%EF%BC%8C%E2%80%8B%E6%B3%A8%E2%80%8B%E9%87%8D%E2%80%8B%E6%80%9D%E2%80%8B%E7%BB%B4%E2%80%8B%E6%8B%86%E2%80%8B%E8%A7%A3%E2%80%8B%E3%80%82;%E2%80%8B%E4%BB%8E%E2%80%8B+LeetCrying+%E2%80%8B%E5%88%B0%E2%80%8B%E8%BD%BB%E2%80%8B%E6%9D%BE%E2%80%8B%E6%8B%BF%E2%80%8B+Offer%EF%BC%81" alt="Typing SVG" />
@@ -17,7 +28,7 @@
 
 <br><br>
 
-[📂 浏览题型分类](./Questions) • [🏢 大厂高频面经](./Companies) 
+[
 
 </div>
 
