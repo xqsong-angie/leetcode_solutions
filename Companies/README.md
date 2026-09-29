@@ -9,7 +9,7 @@
 </a>
 &nbsp;&nbsp;
 <a href="../Algorithms">
-  <img src="https://img.shields.io/badge/Topics-Pattern%20Based-C7CEEA?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
+  <img src="https://img.shields.io/badge/Topics-Pattern%20Based-F8C291?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
 </a>
 &nbsp;&nbsp;
 <a href="README_CN.md">
