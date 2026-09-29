@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/←_Back_to-Main_README-FF85A1?style=for-the-badge" alt="Back to Main">
 </a>
 &nbsp;&nbsp;
-<a href="./Algorithms">
+<a href="../Algorithms">
   <img src="https://img.shields.io/badge/Topics-Pattern%20Based-C7CEEA?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
 </a>
 &nbsp;&nbsp;
