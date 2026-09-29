@@ -26,10 +26,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=B5838D&center=true&vCenter=true&width=550&lines=Stuck+on+a+problem%3F+It's+totally+fine!;Stop+Grinding.+Start+Understanding.;From+Crying+to+Offering!" alt="Typing SVG" />
 </a>
 
-<br><br>
-
-[📂 Browse Algorithm Types](./Algorithms) • [🏢 Company Tagged Questions](./Companies)
-
 </div>
 
 <br>
