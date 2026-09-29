@@ -1,34 +1,94 @@
-# Leetcode Question List for Interviews
+<div align="center">
 
-🌐 **Language** [English](#english-version) | [简体中文](#chinese-version)
+# 😭 ➡️ 😎 No More Leetcrying
+
+### *A Beginner-Friendly Guide to Mastering LeetCode, Tracking Bugs & Cracking Interviews*
+
+[![Language Switch](https://img.shields.io/badge/Language-简体中文-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white)](README_CN.md)
+[![GitHub Stars](https://img.shields.io/github/stars/sxq2003/no-more-leetcrying?style=for-the-badge&color=FF6B6B&logo=github)](https://github.com/sxq2003/no-more-leetcrying/stargazers)
+[![License](https://img.shields.io/github/license/sxq2003/no-more-leetcrying?style=for-the-badge&color=blue)](LICENSE)
+
+<br>
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF6B6B&center=true&vCenter=true&width=550&lines=Stuck+on+a+problem%3F+It's+totally+fine!;Stop+Grinding.+Start+Understanding.;From+Crying+to+Offering!" alt="Typing SVG" />
+</a>
+
+<br><br>
+
+[📂 Browse Question Types](./question_types) • [🏢 Company Tagged Questions](./Companies) • [📕 Read on Little Red Book](https://xiaohongshu.com)
+
+</div>
 
 ---
 
-<a name="english-version"></a>
+> [!TIP]
+> 📖 **Welcome!** 
+> If you've ever felt overwhelmed by algorithm problems, you are not alone. This repository is not just a collection of code—it’s a **step-by-step roadmap**, a **bug-tracking notebook**, and a **mental safety net** designed to help beginners build intuition without the burnout.
 
-## Guide 
+---
 
-### 1. Classified based on question types
-`./question_types` includes the question and my own solutions for the following list. You should have your own. Happy to discuss solutions!
+## 📌 1. Classified by Pattern & Topic
 
-#### How to use the list?
-* **Step 1**
-  Learn some basic knowledge of the category before trying those questions yourself. For each question, think for 5 minutes first. If you cannot come up with any idea, watch a tutorial right away. It's not that you're not smart enough, but rather that you're not familiar with the tricks and knowledge.
-  * ❌ represents that you cannot solve the question by yourself.
-  * 🙂 means that although your solution is overall correct, you cannot fix minor bugs and pass all test cases.
-  * ✅ means you can solve the problem all by yourself. Below is my situation, you will notice some patterns in which questions you handled well and which you didn't. 
+The [`./question_types`](./question_types) directory contains curated problem sets along with my detailed walkthroughs, initial wrong attempts, and optimized solutions. 
 
-* **step 2**
-  After trying all questions once, try redo 🙂 a second time until you get ✅. To avoid burnout, I recommend doing this step in conjunction with step 3 the other day.
+> **Note:** I highly encourage you to create your own branch or folder to track your personal progress! Happy coding and discussion!
 
-* **step 3**
-  Try to understand the idea deeply for ❌, and write the pseudo code down.
+---
 
-* **step 4** 
-Iterate the above 3 steps. As you find yourself can answer some easy to medium questions easily, it is time to set up a 20-minute timer. If you cannot get the answer accepted, you get ❌， if you finished but you cannot make it bug free, use 🙂. If you got accepted within 20 minutes, you get ✅.
+## 🚀 How to Use This Guide Effectively
 
-* **step 5**
-Whenever you get an Online Assessment (OA), start to practice Company List as soon as possible. I have found some online and put them under `Companies` folder.
+Follow this 5-step strategy to transition from *brute-forcing* to *pattern recognition*:
 
-### 2. Classified based on Companies
-[Link] click here to go to the readme file under folder `Companies` to have a glance of what questions I found.
+### Step 1: Learn the Basics & First Attempt
+Before jumping into problems, review the core concepts of the target pattern (e.g., Two Pointers, Sliding Window). 
+* Give yourself **5 minutes of focused thinking** per problem.
+* **Stuck? Don't panic!** Watch a tutorial or read a solution right away. Struggling silently isn't proof of intelligence—it usually just means you haven't encountered that specific trick or data structure pattern yet.
+
+#### 🏷️ Status Tracking System
+Use these emojis in your personal tracking sheet to identify your weak spots:
+
+| Status | Meaning | Action Required |
+| :---: | :--- | :--- |
+| ❌ | Couldn't solve it independently / Got completely stuck. | Learn the pattern and write down pseudo-code. |
+| 🙂 | Conceptually correct, but failed on edge cases or minor bugs. | Re-visit in Step 2 until you get a clean pass. |
+| ✅ | Solved completely on your own with all test cases passed. | Move to timed practice! |
+
+---
+
+### Step 2: Targeted Re-Do
+Once you finish a topic pass, go back to all **🙂** problems. Keep re-implementing them until you turn them into **✅**. 
+
+> 💡 **Pro-Tip:** To prevent burnout, mix Step 2 with Step 3 on alternate days.
+
+---
+
+### Step 3: Deep-Dive into Blockers (❌)
+For every **❌** problem:
+1. Don't just copy the solution. Walk through the code line by line.
+2. Identify the **"Aha Moment"** (the exact logic shift that unlocks the solution).
+3. Write down the **pseudo-code and key intuition** in your own words.
+
+---
+
+### Step 4: Timed Practice (Simulating Real Interviews)
+Once Easy to Medium questions start feeling manageable, turn on a **20-minute timer**:
+* ❌ **Failed:** Couldn't get an accepted solution within 20 minutes.
+* 🙂 **Close:** Got the solution working, but needed extra time or couldn't fix minor bugs.
+* ✅ **Passed:** Fully accepted within 20 minutes with clean, bug-free code.
+
+---
+
+## 🏢 2. Classified by Company Real Questions
+
+When you receive an **Online Assessment (OA)** or interview invitation, switch to company-targeted prep immediately!
+
+* Check out the [🏢 Companies Directory](./Companies) to view curated real interview questions and recent OA patterns gathered from various大厂/tech companies.
+
+---
+
+<div align="center">
+
+**Remember: Consistent pattern recognition > Blind grinding. Let's make "LeetCrying" a thing of the past! 💪**
+
+</div>
