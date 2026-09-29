@@ -4,7 +4,7 @@
 
 ### *推荐学习路线：从基础数据结构到进阶算法*
 
-[![返回主页](https://img.shields.io/badge/←_返回-项目主 README-FF85A1?style=for-the-badge)](../README_CN.md)
+[![返回首页](https://img.shields.io/badge/←_返回首页_-FF85A1?style=for-the-badge)](../README.md)
 [![Language Switch](https://img.shields.io/badge/Language-English-C7CEEA?style=for-the-badge)](README.md)
 
 </div>
