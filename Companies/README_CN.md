@@ -11,7 +11,7 @@
 <a href="../Algorithms">
   <img src="https://img.shields.io/badge/分类-按题型总结-F8C291?style=for-the-badge&logo=leetcode&logoColor=white" alt="Topics">
 </a>
-
+&nbsp;&nbsp;
 <a href="README.md">
   <img src="https://img.shields.io/badge/Language-English-C7CEEA?style=for-the-badge" alt="Language Switch">
 </a>
