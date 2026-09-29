@@ -61,4 +61,4 @@
 | **1022** | [Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/) | 🟢 Easy | ✅ | ✅ |
 | **894** | [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | 🟡 Medium | ❌ | ❌ |
 | **998** | [Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii/) | 🟡 Medium | 🙂 | 🙂 |
-| **1110** | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | 🟡 Medium |  |  |
+| **1110** | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | 🟡 Medium | ❌ |❌  |
