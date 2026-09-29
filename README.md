@@ -30,7 +30,7 @@
 
 ## 1. Classified by Pattern & Topic
 
-The [`./question_types`](./Questions) directory contains curated problem sets along with my detailed walkthroughs, initial wrong attempts, and optimized solutions. 
+The [`./Questions`](./Questions) directory contains curated problem sets along with my detailed walkthroughs, initial wrong attempts, and optimized solutions. 
 
 > **Note:** I highly encourage you to create your own branch or folder to track your personal progress! Happy coding and discussion!
 
