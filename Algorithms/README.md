@@ -5,6 +5,7 @@
 ### *Recommended Learning Roadmap: From Fundamentals to Advanced Concepts*
 
 [![Back to Home](https://img.shields.io/badge/←_Back_to-Main_README-FF85A1?style=for-the-badge)](../README.md)
+[![Companies](https://img.shields.io/badge/Companies-Interview%20Prep%20-F8C291?style=for-the-badge)](README_CN.md)
 [![Language Switch](https://img.shields.io/badge/Language-简体中文-C7CEEA?style=for-the-badge)](README_CN.md)
 
 </div>
