@@ -44,6 +44,7 @@ Follow this 5-step strategy to transition from *brute-forcing* to *pattern recog
 Before jumping into problems, review the core concepts of the target pattern (e.g., Two Pointers, Sliding Window). 
 * Give yourself **5 minutes of focused thinking** per problem.
 * **Stuck? Don't panic!** Watch a tutorial or read a solution right away. Struggling silently isn't proof of intelligence—it usually just means you haven't encountered that specific trick or data structure pattern yet.
+* 📺 **Recommended Resource:** Bilibili - [Carl's Programmeshoughts / 代码随想录](https://www.bilibili.com/video/BV1fA4y1o715/) *(Note: Video tutorials are in Chinese, but the code and logic diagrams are universally easy to follow)*.
 
 #### 🏷️ Status Tracking System
 Use these emojis in your personal tracking sheet to identify your weak spots:
