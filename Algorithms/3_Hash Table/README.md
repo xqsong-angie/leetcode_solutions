@@ -1,3 +1,4 @@
+# 3. Hash Table
 ### 📊 Hash Table Progress & Bug Tracker
 
 | # | Problem Title | Difficulty | Status Log | Current |
@@ -37,3 +38,13 @@
 | **291** | [Word Pattern II](https://leetcode.com/problems/word-pattern-ii/) | 🟡 Medium | ❌ | ❌ |
 | **128** | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 Medium | ❌ | ❌ |
 | **3** | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | 🙂 | 🙂 |
+
+<p align="between">
+  <a href="../2_Linked List/README.md">
+    <img src="https://img.shields.io/badge/%E2%86%90_PREV-333333?style=for-the-badge&logoColor=white" alt="Previous Pattern" align="left" />
+  </a>
+  <a href="../4_String/README.md">
+    <img src="https://img.shields.io/badge/NEXT_%E2%86%92-333333?style=for-the-badge&logoColor=white" alt="Next Pattern" align="right" />
+  </a>
+</p>
+<br />
