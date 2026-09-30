@@ -62,3 +62,15 @@
 | **894** | [All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/) | 🟡 Medium | ❌ | ❌ |
 | **998** | [Maximum Binary Tree II](https://leetcode.com/problems/maximum-binary-tree-ii/) | 🟡 Medium | 🙂 | 🙂 |
 | **1110** | [Delete Nodes And Return Forest](https://leetcode.com/problems/delete-nodes-and-return-forest/) | 🟡 Medium | ❌ |❌  |
+
+
+<p align="between">
+  <a href="../5_Stacks and Queues/README.md">
+    <img src="https://img.shields.io/badge/%E2%86%90_PREV-333333?style=for-the-badge&logoColor=white" alt="Previous Pattern" align="left" />
+  </a>
+  <a href="../7_Backtracking/README.md">
+    <img src="https://img.shields.io/badge/NEXT_%E2%86%92-333333?style=for-the-badge&logoColor=white" alt="Next Pattern" align="right" />
+  </a>
+</p>
+<br />
+
