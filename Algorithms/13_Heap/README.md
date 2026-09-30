@@ -14,4 +14,4 @@
 | **743** | [Network Delay Time](https://leetcode.com/problems/network-delay-time/) | 🟡 Medium |  |  |
 | **1642** | [Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/) | 🟡 Medium |  |  |
 | **759** | [Employee Free Time](https://leetcode.com/problems/employee-free-time/) | 🔴 Hard |  |  |
-| **1383** | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | 🔴 Hard |  |  |
+| **1383** | [Maximum Performance of a Team](https://leetcode.com/problems/maximum-performance-of-a-team/) | 🔴 Hard |❌  |❌  |
