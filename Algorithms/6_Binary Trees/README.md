@@ -38,11 +38,11 @@
 | **366** | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | 🟡 Medium | ❌ | ❌ |
 | **993** | [Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree/) | 🟢 Easy | ❌ | ❌ |
 | **938** | [Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/) | 🟢 Easy | 🙂 | 🙂 |
-| **105** | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 🟡 Medium |  |  |
-| **559** | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) | 🟢 Easy |  |  |
-| **199** | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 🟡 Medium |  |  |
-| **429** | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | 🟡 Medium |  |  |
-| **863** | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | 🟡 Medium |  |  |
+| **105** | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | 🟡 Medium | ❌ | ❌ |
+| **559** | [Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/) | 🟢 Easy | ✅ |✅  |
+| **199** | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 🟡 Medium |✅  | ✅ |
+| **429** | [N-ary Tree Level Order Traversal](https://leetcode.com/problems/n-ary-tree-level-order-traversal/) | 🟡 Medium |✅  | ✅ |
+| **863** | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | 🟡 Medium |❌  | ❌ |
 | **847** | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/) | 🔴 Hard |  |  |
 | **100** | [Same Tree](https://leetcode.com/problems/same-tree/) | 🟢 Easy |  |  |
 | **113** | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | 🟡 Medium |  |  |
