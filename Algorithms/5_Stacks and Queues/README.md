@@ -17,8 +17,9 @@
 | **946** | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | 🟡 Medium | ❌ | ❌ |
 | **735** | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 🟡 Medium | ✅ | ✅ |
 | **770** | [Basic Calculator IV](https://leetcode.com/problems/basic-calculator-iv/) | 🔴 Hard | ❌ | ❌ |
-| **726** | [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) | 🔴 Hard |  |  |
-| **224** | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | 🔴 Hard |  |  |
+| **726** | [Number of Atoms](https://leetcode.com/problems/number-of-atoms/) | 🔴 Hard |🙂  | 🙂 |
+| **224** | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | 🔴 Hard | ❌ | ❌ |
+| **155** | [Min Stack](https://leetcode.com/problems/min-stack/) | 🔴 Hard | ❌ | ❌ |
 
 <p align="between">
   <a href="../4_String/README.md">
