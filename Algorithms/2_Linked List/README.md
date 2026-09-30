@@ -1,3 +1,4 @@
+# 2. Linked List
 ### 📊 Linked List Progress & Bug Tracker
 
 | # | Problem Title | Difficulty | Status Log | Current |
@@ -19,3 +20,13 @@
 | **61** | [Rotate List](https://leetcode.com/problems/rotate-list/) | 🟡 Medium | ✅ | ✅ |
 | **86** | [Partition List](https://leetcode.com/problems/partition-list/) | 🟡 Medium | ❌ | ❌ |
 | **160** | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | 🟢 Easy | 🙂 | 🙂 |
+
+<p align="between">
+  <a href="../1_Array/README.md">
+    <img src="https://img.shields.io/badge/%E2%86%90_PREV-333333?style=for-the-badge&logoColor=white" alt="Previous Pattern" align="left" />
+  </a>
+  <a href="../3_Hash Table/README.md">
+    <img src="https://img.shields.io/badge/NEXT_%E2%86%92-333333?style=for-the-badge&logoColor=white" alt="Next Pattern" align="right" />
+  </a>
+</p>
+<br />
